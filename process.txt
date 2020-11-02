@@ -1,0 +1,52 @@
+1.project creation:-
+First we have to create a project and activate a virtual environment for it and then we have to start an app.
+Commands for creation of project,app:
+django-admin startproject capslab
+Python manage.py startapp app
+
+2.Configuring url's:-
+First we have to configure capslab/urls.py
+We have to set path for apps.url
+Now we have configure apps/urls.py
+In this we have to set path of views for weekarchive and detailview
+
+3.Creating models.py:-
+Now we have create a class of article with headline,slug,content.reporter,pubdate
+Since I have combined both of my assignments I am creating a single article with elements require for  both assignments
+
+4.Creating view.py:-
+Now we have to create two classes one for detailview and other for weekarchiveview
+
+5.Migrations:
+Now we have to migrate the created models
+cmd:python manage.py makemigration
+    python manage.py migrate
+
+6.Admin:
+Since I am using a new project We have to create a superuser
+cmd:python manage.py createsuperuser
+
+7.Creating content in article:-
+We have to open admin page and login with superuser crediantials, as we have migrated the article that we created in models we can see the article in django admin home page
+Now we have to enter the content and save.
+
+8.To access:-
+detailview -> 127.0.0.1:8000/testing
+           -> 127.0.0.1:8000/admin
+           -> 127.0.0.1:8000/covidbreakout
+Week_Archive -> 127.0.0.1:8000/2020/week7/
+
+
+Benefits:-
+detailedView ----> Get details from the user input(filtering)
+Week_Archive ----> Get contents according to the respective week number
+Detailview :Gives the detail of single model instance.Helps the government to find detail of public or countryside detail of article.
+
+
+
+
+
+
+
+ 
+ 

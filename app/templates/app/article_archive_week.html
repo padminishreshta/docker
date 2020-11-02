@@ -1,0 +1,35 @@
+{% load static %}
+<head>
+   <style>
+     body{
+         background-image:url('/static/imgs/back.jpg');
+         background-size :100%;
+     }
+   </style>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+<div class="container card" style="margin-top:3em">
+<h1>Week {{week|date:'W' }}</h1>
+<ul>
+    {% for article in object_list %}
+         <li>{{ article.pub_date|date:"F j, Y"}}: {{ article.headline}}</li>
+    {% endfor %}     
+</ul>
+</div>
+<div style = "margin-top:5em">
+<p>
+<div style = "margin-left:1em">
+   {% if previous_week %}
+       Previous Week: {{previous_week|date:"W"}} of year {{previous_week|date:"Y" }}
+   {% endif %} 
+</div>   
+<div style = "margin-left:39em">  
+     {% if next_week %}
+         Next Week: {{next_week|date:"W"}} of year {{next_week|date:"Y" }}
+     {% endif %}
+</div>
+</p>     
+    
+    
+    
