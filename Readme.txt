@@ -1,7 +1,7 @@
 Models --> creates Article() 
 python manage.py makemigrations 
 python manage.py migrate 
-python manage.py runserver 
+python manage.py runserverr
 
 detailedView ----> Get details from the user input(filtering)
 Week_Archive ----> Get contents according to the respective week number
