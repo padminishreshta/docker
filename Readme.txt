@@ -10,7 +10,8 @@ To access
 detailview -> 127.0.0.1:8000/testing
            -> 127.0.0.1:8000/admin
            -> 127.0.0.1:8000/covidbreakout
-Week_Archive -> 127.0.0.1:8000/2020/week7/
+Week_Archive -> 127.0.0.1:8000/2020/week8/
+
 
 
 
